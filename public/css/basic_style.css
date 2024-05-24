@@ -1,0 +1,196 @@
+.background {
+    background-image: url('../img/BACKGROUND.jpg'); /* Caminho relativo à pasta CSS */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center center; /* Centraliza a imagem */
+    width: 100%; /* Largura total */
+    height: 100vh; /* Altura total da janela de visualização */
+    display: flex; /* Define a div como um contêiner flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-start; /* Alinha os itens no topo */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.conteudo-pagina {
+    background: rgba(8, 0, 41, 0.822);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+.titulo-pagina-2 p {
+    font-size: 24px;
+    color: blueviolet;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+.informacao-pagina {
+    padding: 20px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="text"].borda-preta {
+    border-color: #000;
+}
+input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+button[type="submit"] {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+/* Navbar CSS */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40;
+    padding: 10px 20px;
+    color: white;
+}
+.navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+}
+.navbar-toggler-icon::before {
+    top: -8px;
+}
+.navbar-toggler-icon::after {
+    top: 8px;
+}
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+.nav-item {
+    position: relative;
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+.nav-link:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+.dropdown-menu .dropdown-item {
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f4f4f4;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+input[type="text"] {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Define a largura para 100% do contêiner pai */
+    max-width: 500px; /* Define um valor máximo de largura conforme desejado */
+    box-sizing: border-box;
+    display: block;
+    margin: 10px auto; /* Centraliza os inputs na div */
+}
+
+input[type="password"] {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Define a largura para 100% do contêiner pai */
+    max-width: 500px; /* Define um valor máximo de largura conforme desejado */
+    box-sizing: border-box;
+    display: block;
+    margin: 10px auto; /* Centraliza os inputs na div */
+}
+
+.content-top h1 {
+    color: #ff6600;
+    font-family: Arial, sans-serif; 
+    font-size: 2.5em;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 20px; 
+}
+.informacao-pagina .error-message {
+    color: red; /* Altere para a cor desejada */
+    font-size: 14px; /* Tamanho da fonte */
+    margin-top: 5px; /* Margem superior para separação visual */
+}
