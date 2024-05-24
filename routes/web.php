@@ -16,7 +16,8 @@ use App\Http\Middleware\AuthMiddleware;
 
 Route::get('/', [App\Http\Controllers\UserController::class, 'index'])->name('site.index');
 
-Route::get('/login', [App\Http\Controllers\UserController::class, 'login'])->name('site.login');
+Route::get('/login/{error?}',  [App\Http\Controllers\LoginController::class, 'index'])->name('site.login');
+Route::post('/login',         [App\Http\Controllers\LoginController::class, 'login'])->name('site.login');
 
 Route::get('/register', [App\Http\Controllers\UserController::class, 'registerView'])->name('site.register');
 Route::post('/register', [App\Http\Controllers\UserController::class, 'register'])->name('site.register');

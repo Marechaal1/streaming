@@ -8,8 +8,9 @@
             <p>Login</p>
         </div>
         <div class="informacao-pagina">
-            <div style="width: 30%; margin-left: auto; margin-right: auto;">
-                <form method="POST" action="#">
+            <div style="width: 70%; margin-left: auto; margin-right: auto;">
+                <span class="error-message">{{$msg ?? ''}}</span>
+                <form method="POST" action="{{route('site.login')}}">
                     @csrf
                     <input type="hidden" name="id" value="{{ $supplier->id ?? '' }}">
                     <input type="text" name="email" value="{{ $supplier->name ?? old('email') }}" placeholder="E-MAIL"
